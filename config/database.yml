@@ -23,6 +23,8 @@ default: &default
 development:
   <<: *default
   database: facebook_backend_api_development
+  username: postgres
+  password: root
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -57,6 +59,8 @@ development:
 test:
   <<: *default
   database: facebook_backend_api_test
+  username: postgres
+  password: root
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,5 +85,5 @@ test:
 production:
   <<: *default
   database: facebook_backend_api_production
-  username: facebook_backend_api
-  password: <%= ENV["FACEBOOK_BACKEND_API_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: root
