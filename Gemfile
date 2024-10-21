@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem "rails", "~> 7.2.1"
 # Use postgresql as the database for Active Record
 gem "pg"
+gem 'zeitwerk', '~> 2.6'
 gem "devise"
 gem "doorkeeper"
 gem "pry-rails"
